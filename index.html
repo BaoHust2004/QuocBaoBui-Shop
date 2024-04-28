@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuocBaoBui shop</title>
+    <link rel="stylesheet" href="./assets/css/base.css"></link>
+    <link rel="stylesheet" href="./assets/css/main.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></link>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--seperate">
+                            Vào cửa hàng trên ứng dụng QuocBaoBui shop
+                            <div class="header__qr">
+                                <img src="./img/qr_code.png" alt="QR code" class="header__qr-img"></img>
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./img/appstore.png" alt="App store" class="header__qr-apps-img"></img>
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./img/ggplay.png" alt="GG play" class="header__qr-apps-img"></img>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--nopointer">Kết nối</span>
+                            <a href="" class="header_navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header_navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-noti">
+                            <a href="" class="header__navbar-item-link">
+                                <a href="" class="header_navbar-icon-link">
+                                    <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                </a>
+                                Thông báo
+                            </a>
+                            <div class="header__notifi">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhất</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="data:image/jpeg;base64,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" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Rubik QBB flash sale mừng đại lễ</span>
+                                                <span class="header__notify-discription">Flash sale toàn ngành hàng trong 1 tuần</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="data:image/jpeg;base64,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" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Sale sốc Rubik cực kì đẳng cấp của nhà QBB mại dô mại dô</span>
+                                                <span class="header__notify-discription">Rubik QBB chính hãng là 1 loại mĩ phẩm tuyệt cà là vời lắm lun nha</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://rubikstore.vn/cdn/data/afficheimg/thuong-hieu-rubik-1628873441.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tất tần tật về Rubik QBB</span>
+                                                <span class="header__notify-discription">Miêu tả của Rubik QBB chính hãng</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="data:image/jpeg;base64,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" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tri ân khách hàng</span>
+                                                <span class="header__notify-discription">Mua 1 tặng 1 mọi sản phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a> 
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <a href="" class="header_navbar-icon-link">
+                                    <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                </a>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item--seperate">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li>
+                    </ul>
+                </nav>
+                <!--header with search-->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <svg viewBox="0 0 192 65" class="header__logo-img">
+                            <g fill-rule="evenodd">
+                                <path fill="#fff"
+                                    d="M35.6717403 44.953764c-.3333497 2.7510509-2.0003116 4.9543414-4.5823845 6.0575984-1.4379707.6145919-3.36871.9463856-4.896954.8421628-2.3840266-.0911143-4.6237865-.6708937-6.6883352-1.7307424-.7375522-.3788551-1.8370513-1.1352759-2.6813095-1.8437757-.213839-.1790053-.239235-.2937577-.0977428-.4944671.0764015-.1151823.2172535-.3229831.5286218-.7791994.45158-.6616533.5079208-.7446018.5587128-.8221779.14448-.2217688.3792333-.2411091.6107855-.0588804.0243289.0189105.0243289.0189105.0426824.0333083.0379873.0294402.0379873.0294402.1276204.0990653.0907002.0706996.14448.1123887.166248.1287205 2.2265285 1.7438508 4.8196989 2.7495466 7.4376251 2.8501162 3.6423042-.0496401 6.2615109-1.6873341 6.7308041-4.2020035.5160305-2.7675977-1.6565047-5.1582742-5.9070334-6.4908212-1.329344-.4166762-4.6895175-1.7616869-5.3090528-2.1250697-2.9094471-1.7071043-4.2697358-3.9430584-4.0763845-6.7048539.296216-3.8283059 3.8501677-6.6835796 8.340785-6.702705 2.0082079-.004083 4.0121475.4132378 5.937338 1.2244562.6816382.2873109 1.8987274.9496089 2.3189359 1.2633517.2420093.1777159.2898136.384872.1510957.60836-.0774686.12958-.2055158.3350171-.4754821.7632974l-.0029878.0047276c-.3553311.5640922-.3664286.5817134-.447952.7136572-.140852.2144625-.3064598.2344475-.5604202.0732783-2.0600669-1.3839063-4.3437898-2.0801572-6.8554368-2.130442-3.126914.061889-5.4706057 1.9228561-5.6246892 4.4579402-.0409751 2.2896772 1.676352 3.9613243 5.3858811 5.2358503 7.529819 2.4196871 10.4113092 5.25648 9.869029 9.7292478M26.3725216 5.42669372c4.9022893 0 8.8982174 4.65220288 9.0851664 10.47578358H17.2875686c.186949-5.8235807 4.1828771-10.47578358 9.084953-10.47578358m25.370857 11.57065968c0-.6047069-.4870064-1.0948761-1.0875481-1.0948761h-11.77736c-.28896-7.68927544-5.7774923-13.82058185-12.5059489-13.82058185-6.7282432 0-12.2167755 6.13130641-12.5057355 13.82058185l-11.79421958.0002149c-.59136492.0107446-1.06748731.4968309-1.06748731 1.0946612 0 .0285807.00106706.0569465.00320118.0848825H.99995732l1.6812605 37.0613963c.00021341.1031483.00405483.2071562.01173767.3118087.00170729.0236381.003628.0470614.00554871.0704847l.00362801.0782207.00405483.004083c.25545428 2.5789222 2.12707837 4.6560709 4.67201764 4.7519129l.00576212.0055872h37.4122078c.0177132.0002149.0354264.0004298.0531396.0004298.0177132 0 .0354264-.0002149.0531396-.0004298h.0796027l.0017073-.0015043c2.589329-.0706995 4.6867431-2.1768587 4.9082648-4.787585l.0012805-.0012893.0017073-.0350275c.0021341-.0275062.0040548-.0547975.0057621-.0823037.0040548-.065757.0068292-.1312992.0078963-.1964115l1.8344904-37.207738h-.0012805c.001067-.0186956.0014939-.0376062.0014939-.0565167M176.465457 41.1518926c.720839-2.3512494 2.900423-3.9186779 5.443734-3.9186779 2.427686 0 4.739107 1.6486899 5.537598 3.9141989l.054826.1556978h-11.082664l.046506-.1512188zm13.50267 3.4063683c.014933.0006399.014933.0006399.036906.0008531.021973-.0002132.021973-.0002132.044372-.0008531.53055-.0243144.950595-.4766911.950595-1.0271786 0-.0266606-.000853-.0496953-.00256-.0865936.000427-.0068251.000427-.020262.000427-.0635588 0-5.1926268-4.070748-9.4007319-9.09145-9.4007319-5.020488 0-9.091235 4.2081051-9.091235 9.4007319 0 .3871116.022399.7731567.067838 1.1568557l.00256.0204753.01408.1013102c.250022 1.8683731 1.047233 3.5831812 2.306302 4.9708108-.00064-.0006399.00064.0006399.007253.0078915 1.396026 1.536289 3.291455 2.5833031 5.393601 2.9748936l.02752.0053321v-.0027727l.13653.0228215c.070186.0119439.144211.0236746.243409.039031 2.766879.332724 5.221231-.0661182 7.299484-1.1127057.511777-.2578611.971928-.5423827 1.37064-.8429007.128211-.0968312.243622-.1904632.34346-.2781231.051412-.0452164.092372-.083181.114131-.1051493.468898-.4830897.498124-.6543572.215249-1.0954297-.31146-.4956734-.586228-.9179769-.821744-1.2675504-.082345-.1224254-.154023-.2267215-.214396-.3133151-.033279-.0475624-.033279-.0475624-.054399-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.00256-.0038391c-.256208-.3188605-.431565-.3480805-.715933-.0970445-.030292.0268739-.131624.1051493-.14997.1245582-1.999321 1.775381-4.729508 2.3465571-7.455854 1.7760208-.507724-.1362888-.982595-.3094759-1.419919-.5184948-1.708127-.8565509-2.918343-2.3826022-3.267563-4.1490253l-.02752-.1394881h13.754612zM154.831964 41.1518926c.720831-2.3512494 2.900389-3.9186779 5.44367-3.9186779 2.427657 0 4.739052 1.6486899 5.537747 3.9141989l.054612.1556978h-11.082534l.046505-.1512188zm13.502512 3.4063683c.015146.0006399.015146.0006399.037118.0008531.02176-.0002132.02176-.0002132.044159-.0008531.530543-.0243144.950584-.4766911.950584-1.0271786 0-.0266606-.000854-.0496953-.00256-.0865936.000426-.0068251.000426-.020262.000426-.0635588 0-5.1926268-4.070699-9.4007319-9.091342-9.4007319-5.020217 0-9.091343 4.2081051-9.091343 9.4007319 0 .3871116.022826.7731567.068051 1.1568557l.00256.0204753.01408.1013102c.250019 1.8683731 1.04722 3.5831812 2.306274 4.9708108-.00064-.0006399.00064.0006399.007254.0078915 1.396009 1.536289 3.291417 2.5833031 5.393538 2.9748936l.027519.0053321v-.0027727l.136529.0228215c.070184.0119439.144209.0236746.243619.039031 2.766847.332724 5.22117-.0661182 7.299185-1.1127057.511771-.2578611.971917-.5423827 1.370624-.8429007.128209-.0968312.243619-.1904632.343456-.2781231.051412-.0452164.09237-.083181.11413-.1051493.468892-.4830897.498118-.6543572.215246-1.0954297-.311457-.4956734-.586221-.9179769-.821734-1.2675504-.082344-.1224254-.154022-.2267215-.21418-.3133151-.033492-.0475624-.033492-.0475624-.054612-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.002346-.0038391c-.256419-.3188605-.431774-.3480805-.716138-.0970445-.030292.0268739-.131623.1051493-.149969.1245582-1.999084 1.775381-4.729452 2.3465571-7.455767 1.7760208-.507717-.1362888-.982582-.3094759-1.419902-.5184948-1.708107-.8565509-2.918095-2.3826022-3.267311-4.1490253l-.027733-.1394881h13.754451zM138.32144123 49.7357905c-3.38129629 0-6.14681004-2.6808521-6.23169343-6.04042014v-.31621743c.08401943-3.35418649 2.85039714-6.03546919 6.23169343-6.03546919 3.44242097 0 6.23320537 2.7740599 6.23320537 6.1960534 0 3.42199346-2.7907844 6.19605336-6.23320537 6.19605336m.00172791-15.67913203c-2.21776751 0-4.33682838.7553485-6.03989586 2.140764l-.19352548.1573553V34.6208558c0-.4623792-.0993546-.56419733-.56740117-.56419733h-2.17651376c-.47409424 0-.56761716.09428403-.56761716.56419733v27.6400724c0 .4539841.10583425.5641973.56761716.5641973h2.17651376c.46351081 0 .56740117-.1078454.56740117-.5641973V50.734168l.19352548.1573553c1.70328347 1.3856307 3.82234434 2.1409792 6.03989586 2.1409792 5.27140956 0 9.54473746-4.2479474 9.54473746-9.48802964 0-5.239867-4.2733279-9.48781439-9.54473746-9.48781439M115.907646 49.5240292c-3.449458 0-6.245805-2.7496948-6.245805-6.1425854 0-3.3928907 2.79656-6.1427988 6.245805-6.1427988 3.448821 0 6.24538 2.7499081 6.24538 6.1427988 0 3.3926772-2.796346 6.1425854-6.24538 6.1425854m.001914-15.5438312c-5.28187 0-9.563025 4.2112903-9.563025 9.4059406 0 5.1944369 4.281155 9.4059406 9.563025 9.4059406 5.281657 0 9.562387-4.2115037 9.562387-9.4059406 0-5.1946503-4.280517-9.4059406-9.562387-9.4059406M94.5919049 34.1890939c-1.9281307 0-3.7938902.6198995-5.3417715 1.7656047l-.188189.1393105V23.2574169c0-.4254677-.1395825-.5643476-.5649971-.5643476h-2.2782698c-.4600414 0-.5652122.1100273-.5652122.5643476v29.2834155c0 .443339.1135587.5647782.5652122.5647782h2.2782698c.4226187 0 .5649971-.1457701.5649971-.5647782v-9.5648406c.023658-3.011002 2.4931278-5.4412923 5.5299605-5.4412923 3.0445753 0 5.516841 2.4421328 5.5297454 5.4630394v9.5430935c0 .4844647.0806524.5645628.5652122.5645628h2.2726775c.481764 0 .565212-.0824666.565212-.5645628v-9.5710848c-.018066-4.8280677-4.0440197-8.7806537-8.9328471-8.7806537M62.8459442 47.7938061l-.0053397.0081519c-.3248668.4921188-.4609221.6991347-.5369593.8179812-.2560916.3812097-.224267.551113.1668119.8816949.91266.7358184 2.0858968 1.508535 2.8774525 1.8955369 2.2023021 1.076912 4.5810275 1.646045 7.1017886 1.6975309 1.6283921.0821628 3.6734936-.3050536 5.1963734-.9842376 2.7569891-1.2298679 4.5131066-3.6269626 4.8208863-6.5794607.4985136-4.7841067-2.6143125-7.7747902-10.6321784-10.1849709l-.0021359-.0006435c-3.7356476-1.2047686-5.4904836-2.8064071-5.4911243-5.0426086.1099976-2.4715346 2.4015793-4.3179454 5.4932602-4.4331449 2.4904317.0062212 4.6923065.6675996 6.8557356 2.0598624.4562232.2767364.666607.2256796.9733188-.172263.035242-.0587797.1332787-.2012238.543367-.790093l.0012815-.0019308c.3829626-.5500403.5089793-.7336731.5403767-.7879478.258441-.4863266.2214903-.6738208-.244985-1.0046173-.459427-.3290803-1.7535544-1.0024722-2.4936356-1.2978721-2.0583439-.8211991-4.1863175-1.2199998-6.3042524-1.1788111-4.8198184.1046878-8.578747 3.2393171-8.8265087 7.3515337-.1572005 2.9703036 1.350301 5.3588174 4.5000778 7.124567.8829712.4661613 4.1115618 1.6865902 5.6184225 2.1278667 4.2847814 1.2547527 6.5186944 3.5630343 6.0571315 6.2864205-.4192725 2.4743234-3.0117991 4.1199394-6.6498372 4.2325647-2.6382344-.0549182-5.2963324-1.0217793-7.6043603-2.7562084-.0115337-.0083664-.0700567-.0519149-.1779185-.1323615-.1516472-.1130543-.1516472-.1130543-.1742875-.1300017-.4705335-.3247898-.7473431-.2977598-1.0346184.1302162-.0346012.0529875-.3919333.5963776-.5681431.8632459"
+                                ></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm trong shop này">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Gan Cube</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Rubik tam giác</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                      <a href="">Rubik 12 mặt</a>
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span class="">Trong shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item ">
+                                    <span class="">Ngoài shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                          <i class="header__cart-icon fas fa-shopping-cart"></i>
+                          <span class="header__cart-notice">3</span>
+          
+                          <!-- No cart: header__cart-list--no-cart -->
+                          <div class="header__cart-list">
+                            <img
+                              src="./assets/img/no_cart.png"
+                              alt=""
+                              class="header__cart-no-cart-img"
+                            />
+                            <span class="header__cart-list-no-cart-msg">
+                              Chưa có sản phẩm
+                            </span>
+          
+                            <h4 class="header__cart--heading">Sản phẩm đã thêm</h4>
+                            <ul class="header__cart-list-item">
+                              <!-- Cart item -->
+                              <li class="header__cart-item">
+                                <img
+                                  src="https://rubikstore.vn/cdn/images/202107/goods_img/rubik-gan-356-i-carry-3x3x3-stickerless-sp006288-G1067-1625479121456.jpg"
+                                  alt=""
+                                  class="header__cart-img"
+                                />
+                                <div class="header__cart-item-info">
+                                  <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">
+                                      Rubik Gan 356 i Carry 3x3x3 Stickerless có bluetooth nam châm cao cấp chính hãng kết nối điện thoại
+                                    </h5>
+                                    <div class="header__cart-item-price-wrap">
+                                      <span class="header__cart-item-price"
+                                        >630.000</span
+                                      >
+                                      <span class="header__cart-item-multiply">x</span>
+                                      <span class="header__cart-item-qnt">2</span>
+                                    </div>
+                                  </div>
+                                  <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description"
+                                      >Phân loại: Rubik 3x3</span
+                                    >
+                                    <span class="header__cart-item-remove">Xóa</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="header__cart-item">
+                                <img
+                                  src="https://rubikstore.vn/cdn/images/202108/goods_img/rubik-gan-356-m-no-ges-3x3-stickerless-sp006057-G374-1628508469963.jpg"
+                                  alt=""
+                                  class="header__cart-img"
+                                />
+                                <div class="header__cart-item-info">
+                                  <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">
+                                      Rubik GAN 356 M no GES+ 3x3 Stickerless có nam châm cao cấp (SP006057)
+                                    </h5>
+                                    <div class="header__cart-item-price-wrap">
+                                      <span class="header__cart-item-price"
+                                        >495.000đ</span
+                                      >
+                                      <span class="header__cart-item-multiply">x</span>
+                                      <span class="header__cart-item-qnt">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description"
+                                      >Phân loại: Rubik 3x3</span
+                                    >
+                                    <span class="header__cart-item-remove">Xóa</span>
+                                  </div>  
+                                </div>
+                              </li>
+                              <li class="header__cart-item">
+                                <img
+                                  src="https://rubikstore.vn/cdn/images/202107/goods_img/rubik-gan-megaminx-m-stickerless-co-nam-cham-sp005176-G923-1626016461120.jpg"
+                                  alt=""
+                                  class="header__cart-img"
+                                />
+                                <div class="header__cart-item-info">
+                                  <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">
+                                      Rubik GAN Megaminx M stickerless (có nam châm) - SP005176
+                                    </h5>
+                                    <div class="header__cart-item-price-wrap">
+                                      <span class="header__cart-item-price"
+                                        >900.000đ</span
+                                      >
+                                      <span class="header__cart-item-multiply">x</span>
+                                      <span class="header__cart-item-qnt">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description"
+                                      >Phân loại: Rubik 12 mặt</span
+                                    >
+                                    <span class="header__cart-item-remove">Xóa</span>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <a href="#" class="btn btn--primary header__cart-view-cart"
+                              >Xem giỏ hàng</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="app__container">
+          <div class="grid">
+          <div class="grid__row app__content">
+            <div class="grid__column-2">
+              <nav class="category">
+
+                <h3 class="category__heading">
+                  <i class="category__heading-icon fa-solid fa-list"></i>
+                  Danh mục
+                </h3>
+                <ul class="category-list">
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Rubik 2x2</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 3x3</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 4x4</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 5x5</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 6x6</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 7x7</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 8x8</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 9x9</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 10x10</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik tam giác</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik 12 mặt</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Rubik biến thể khác</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Phụ kiện rubik</a>
+                  </li>
+                  
+                </ul>
+              </nav>
+            </div>
+            <div class="grid__column-10">
+              <div class="home-filter">
+                <span class="home-filter__label">Sắp xếp theo</span>
+                <button class="btn home-filter__btn">Phổ biến</button>
+                <button class="btn home-filter__btn btn--primary">Mới nhất</button>
+                <button class="btn home-filter__btn">Bán chạy</button>
+                <div class="select-input">
+                  <span class="select-input__label">Giá</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <ul class="select-input__list">
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                    </li>
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-filter__page">
+                  <span class="home-filter__page-num">
+                    <span class="home-filter__page-current">1</span>/10
+                  </span>
+                  <div class="home-filter__page-control">
+                    <a href="" class="home-filter__page-btn">
+                      <i class="home-filter__page-icon fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="" class="home-filter__page-btn">
+                      <i class="home-filter__page-icon fa-solid fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-product">
+                <div class="grid__row">
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202108/goods_img/rubik-gan-356-m-no-ges-3x3-stickerless-sp006057-G374-1628508469963.jpg)">
+                      <h4 class="home-product-item__name">Rubik GAN 356 M no GES+ 3x3 Stickerless có nam châm cao cấp (SP006057)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">550.000đ</span>
+                        <span class="home-product-item__price-curent">495.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">188 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/rubik-gan-pyraminx-m-stickerless-G1426-1625650083293.jpg)">
+                      <h4 class="home-product-item__name">Rubik Gan Pyraminx M Stickerless có nam châm cao cấp</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">440.000đ</span>
+                        <span class="home-product-item__price-curent">396.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">96 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/rubik-gan-megaminx-m-stickerless-co-nam-cham-sp005176-G923-1626016461120.jpg)">
+                      <h4 class="home-product-item__name">Rubik GAN Megaminx M stickerless (có nam châm) - SP005176</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.000.000đ</span>
+                        <span class="home-product-item__price-curent">900.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202308/goods_img/rubik-gan-14-maglev-uv-3x3-co-nam-cham-cao-cap-nhat-2023-chinh-hang-G1488-1692161736233.jpg)">
+                      <h4 class="home-product-item__name">Rubik GAN 14 Maglev UV 3x3 có nam châm cao cấp nhất 2023 chính hãng</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.800.000</span>
+                        <span class="home-product-item__price-curent">1.620.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202312/goods_img/rubik-gan-356-3x3-maglev-magnetics-co-nam-cham-flagship-2023-G1492-1701791847267.jpg)">
+                      <h4 class="home-product-item__name">Rubik GAN 356 3x3 MagLev Magnetics có nam châm Flagship 2023</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">700.000đ</span>
+                        <span class="home-product-item__price-curent">630.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">48 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202211/goods_img/rubik-qiyi-xmd-tornado-v3-m-standard-3x3x3-stickerless-G1465-1669734040271.jpg)">
+                      <h4 class="home-product-item__name">Rubik QiYi XMD Tornado V3 M Standard 3x3x3 Stickerless</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">600.000</span>
+                        <span class="home-product-item__price-curent">540.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202110/goods_img/rubik-gan-11-m-dou-3x3-stickerless-cao-cap-co-nam-cham-G1069-1634379802572.jpg)">
+                      <h4 class="home-product-item__name">Rubik GAN 11 M Dou 3x3 Stickerless (Cao cấp có nam châm)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">890.000đ</span>
+                        <span class="home-product-item__price-curent">801.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202312/goods_img/rubik-gan-356-maglev-uv-3x3-co-nam-cham-flagship-2023-G1493-1701828251029.jpg)">
+                      <h4 class="home-product-item__name">Rubik GAN 356 Maglev UV 3x3 có nam châm Flagship 2023</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">890.000đ</span>
+                        <span class="home-product-item__price-curent">801.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202312/goods_img/rubik-gan-356-rs2-3x3-stickerless-G1495-1702177434543.jpg)">
+                      <h4 class="home-product-item__name">Rubik GAN 356 RS2 3x3 stickerless</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">400.000đ</span>
+                        <span class="home-product-item__price-curent">360.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/rubik-gan-356-i-carry-3x3x3-stickerless-sp006288-G1067-1625479121456.jpg)">
+                      <h4 class="home-product-item__name">Rubik Gan 356 i Carry 3x3x3 Stickerless có bluetooth nam châm cao cấp chính hãng kết nối điện thoại</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">700.000đ</span>
+                        <span class="home-product-item__price-curent">630.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202302/goods_img/rubik-gan-251-v2-2x2-stickerless-G1476-1677167474176.jpg)">
+                      <h4 class="home-product-item__name">Rubik Gan 251 V2 2x2 Stickerless</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">440.000đ</span>
+                        <span class="home-product-item__price-curent">396.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/qiyi-ms-2x2-magnetic-stickerless-sp006067-G1404-1625367644412.jpg)">
+                      <h4 class="home-product-item__name">Rubik QiYi MS 2x2 Magnetic Stickerless có nam châm (SP006067)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">170.000đ</span>
+                        <span class="home-product-item__price-curent">153.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/rubik-mofangjiaoshi-meilong-4x4-m-stickerless-sp006077-G1403-1626690226251.jpg)">
+                      <h4 class="home-product-item__name">Rubik Mofangjiaoshi Meilong 4x4 M Stickerless có nam châm (SP006077)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">280.000đ</span>
+                        <span class="home-product-item__price-curent">252.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/gan-460m-stickerless-sp003613-G1286-1625560677938.jpg)">
+                      <h4 class="home-product-item__name">Rubik 4x4 Gan 460M Stickerless có nam châm cao cấp(SP003613)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.100.000đ</span>
+                        <span class="home-product-item__price-curent">990.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/yuxin-cloud-kylin-5x5x5-stickerless-sp006361-G995-1625629288487.jpg)">
+                      <h4 class="home-product-item__name">Rubik YuXin Cloud Kylin 5x5x5 stickerless (SP006361)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">200.000đ</span>
+                        <span class="home-product-item__price-curent">180.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/yj-mgc-5x5-m-stickerless-sp005986-G1389-1625628360272.jpg)">
+                      <h4 class="home-product-item__name">Rubik YJ MGC 5x5 M Stickerless có nam châm cao cấp - SP005986</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">460.000đ</span>
+                        <span class="home-product-item__price-curent">414.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/mofangjiaoshi-meilong-6x6-stickerless-sp005323-G880-1625474921590.jpg)">
+                      <h4 class="home-product-item__name">Rubik MoFangJiaoshi Meilong 6x6 stickerless - SP005323</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">300.000đ</span>
+                        <span class="home-product-item__price-curent">270.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/qiyi-x-man-6x6x6-shadow-m-co-nam-cham-sp005172-G925-1625477043879.jpg)">
+                      <h4 class="home-product-item__name">Rubik QiYi X-MAN 6x6x6 Shadow M (có nam châm) - SP005172</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.000.000đ</span>
+                        <span class="home-product-item__price-curent">900.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/yj-mgc-6x6-m-black-sp005984-G1390-1625474394081.jpg  )">
+                      <h4 class="home-product-item__name">Rubik YJ MGC 6x6 M Black (SP005984)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">500.000đ</span>
+                        <span class="home-product-item__price-curent">450.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202404/goods_img/rubik-moyu-meilong-7x7-v2-m-stickerless-G1497-1712933752712.jpg)">
+                      <h4 class="home-product-item__name">Rubik MoYu Meilong 7x7 V2 M Stickerless</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">400.000đ</span>
+                        <span class="home-product-item__price-curent">360.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/x-man-7x7-spark-m-stickerless-sp004492-G791-1625472361413.jpg)">
+                      <h4 class="home-product-item__name">Rubik X-man 7x7 Spark M Stickerless - SP004492</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">950.000đ</span>
+                        <span class="home-product-item__price-curent">855.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/moyu-aofu-gts-m-7x7-stickerless-sp005013-G877-1625472021410.jpg)">
+                      <h4 class="home-product-item__name">Rubik MoYu AoFu GTS M 7x7 Stickerless - SP005013</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">800.000đ</span>
+                        <span class="home-product-item__price-curent">720.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/mofangjiaoshi-mf8-8x8x8-stickerless-sp003911-G717-1625413225806.jpg)">
+                      <h4 class="home-product-item__name">Rubik MofangJiaoshi Meilong 8x8x8 Stickerless - SP003911</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">700.000đ</span>
+                        <span class="home-product-item__price-curent">630.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202204/goods_img/rubik-8x8-shengshou-8x8x8-stickerless-G1456-1651111969858.jpg)">
+                      <h4 class="home-product-item__name">Rubik 8x8 Shengshou 8x8x8 Stickerless</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">900.000đ</span>
+                        <span class="home-product-item__price-curent">810.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/yuxin-huanglong-8x8x8-stickerlesssp003387-G1210-1625413629025.jpg)">
+                      <h4 class="home-product-item__name">YuXin Huanglong 8x8x8 Stickerless(SP003387)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.500.000đ</span>
+                        <span class="home-product-item__price-curent">1.350.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/yuxin-little-magic-9x9-stickerless-sp005177-G938-1625411368579.jpg)">
+                      <h4 class="home-product-item__name">Rubik YuXin Little Magic 9x9 stickerless - SP005177</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">800.000đ</span>
+                        <span class="home-product-item__price-curent">720.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/yuxin-huanglong-9x9x9-stickerless-yx9901-G971-1625412181025.jpg)">
+                      <h4 class="home-product-item__name">Rubik YuXin Huanglong 9x9x9 Stickerless (YX9901)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.800.000đ</span>
+                        <span class="home-product-item__price-curent">1.620.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202308/goods_img/rubik-10x10-yuxin-little-magic-10x10x10-stickerless-G1485-1691668725638.jpg)">
+                      <h4 class="home-product-item__name">Rubik 10x10 Yuxin Little Magic 10x10x10 Stickerless</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.000.000đ</span>
+                        <span class="home-product-item__price-curent">900.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/yuxin-huanglong-10x10x10-stickerlesssp003614-G1287-1625409637512.jpg)">
+                      <h4 class="home-product-item__name">Rubik YuXin Huanglong 10x10x10 Stickerless(SP003614)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">2.000.000đ</span>
+                        <span class="home-product-item__price-curent">1.800.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202301/goods_img/rubik-moyu-rs-pyraminx-m-stickerless-co-nam-cham-G1470-1672979508396.jpg)">
+                      <h4 class="home-product-item__name">Rubik MoYu RS Pyraminx M Stickerless có nam châm</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">160.000đ</span>
+                        <span class="home-product-item__price-curent">144.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202404/goods_img/rubik-bien-the-qiyi-ivy-m-stickerless-G1500-1712935806340.jpg)">
+                      <h4 class="home-product-item__name">Rubik biến thể QiYi IVY M Stickerless</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">170.000đ</span>
+                        <span class="home-product-item__price-curent">153.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/rubik-moyu-meilong-skewb-cube-stickerless-sp006074-G1400-1626694893591.jpg)">
+                      <h4 class="home-product-item__name">Rubik Moyu Meilong Skewb cube Stickerless (SP006074)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">120.000đ</span>
+                        <span class="home-product-item__price-curent">108.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/shengshou-master-kilominx-4x4-dodehedronsp000409-G659-1626099150140.jpg)">
+                      <h4 class="home-product-item__name">Rubik Shengshou Master Kilominx 4x4 Dodehedron(SP000409)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">900.000đ</span>
+                        <span class="home-product-item__price-curent">810.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202302/goods_img/rubik-bien-the-hanoiminx-white-G1474-1675215697722.jpg)">
+                      <h4 class="home-product-item__name">Rubik biến thể Hanoiminx White</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">1.000.000đ</span>
+                        <span class="home-product-item__price-curent">900.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/lanlan-master-skewb-p0000076-G123-1626080257915.jpg)">
+                      <h4 class="home-product-item__name">Rubik Lanlan Master Skewb (P0000076)</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">250.000đ</span>
+                        <span class="home-product-item__price-curent">225.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202301/goods_img/rubik-qiyi-gear-cube-3x3-black-G1471-1672980512783.jpg)">
+                      <h4 class="home-product-item__name">Rubik QiYi Gear cube 3x3 black</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">200.000đ</span>
+                        <span class="home-product-item__price-curent">180.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202207/goods_img/dong-ho-bam-gio-rubik-qiyi-speedcubing-timer-G1459-1657563741207.jpg)">
+                      <h4 class="home-product-item__name">Đồng hồ bấm giờ Rubik QiYi SpeedCubing Timer</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">250.000đ</span>
+                        <span class="home-product-item__price-curent">225.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202108/goods_img/dong-ho-gan-timer-silver-sp006427-G1446-1629001265674.jpg)">
+                      <h4 class="home-product-item__name">Đồng hồ GAN Timer Silver - SP006427</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">700.000đ</span>
+                        <span class="home-product-item__price-curent">630.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/dau-boi-tron-rubik-gan-lube-magic-10-ml-sp006273-G1434-1627119481846.jpg)">
+                      <h4 class="home-product-item__name">Dầu bôi trơn Rubik Gan Lube Magic 10 ml - SP006273</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">70.000đ</span>
+                        <span class="home-product-item__price-curent">63.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div class="home-product-item__img" style="background-image: url(https://rubikstore.vn/cdn/images/202107/goods_img/phu-kien-yuxin-matsp000101-G1064-1625803921060.jpg)">
+                      <h4 class="home-product-item__name">Thảm kê Rubik Yuxin Mat - SP000101</h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">200.000đ</span>
+                        <span class="home-product-item__price-curent">180.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked  ">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Trung Quốc</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="">Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                      </div>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="pagination home-product__pagination">
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    <i class="pagination-item__icon fa-solid fa-angle-left"></i>
+                </a>
+            </li>
+            <li class="pagination-item pagination-item--active">
+                <a href="" class="pagination-item__link">
+                    1
+                </a>
+            </li>
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    2
+                </a>
+            </li>
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    3
+                </a>
+            </li>
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    4
+                </a>
+            </li>
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    5
+                </a>
+            </li>
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    ...
+                </a>
+            </li>
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    15
+                </a>
+            </li>
+            <li class="pagination-item">
+                <a href="" class="pagination-item__link">
+                    <i class="pagination-item__icon fa-solid fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+
+          </div>
+        </div>
+        
+        <footer class=" footer">
+          <div class="grid">
+              <div class="grid__row">
+                  <div class="grid__column-2-4">
+                      <h3 class="footer__heading">
+                          Chăm sóc khách hàng
+                      </h3>
+                      <ul class="footer__list">
+                          <li class="footer-item">
+                              <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" class="footer-item__link">QuocBaoBui Shop Blog</a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="grid__column-2-4">
+                      <h3 class="footer__heading">
+                          Về QuocBaoBui Shop
+                      </h3>
+                      <ul class="footer__list">
+                          <li class="footer-item">
+                              <a href="" target="_blank" class="footer-item__link">
+                                  Giới thiệu về QuocBaoBui Shop</a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank" class="footer-item__link">
+                                  Tuyển dụng</a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank"
+                                  class="footer-item__link">
+                                  Điều khoản</a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank"
+                                  class="footer-item__link">
+                                  Chính sách bảo mật</a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank" class="footer-item__link">
+                                  Chính hãng</a>
+                          </li>
+                  </div>
+                  <div class="grid__column-2-4">
+                      <h3 class="footer__heading">
+                          Danh mục
+                      </h3>
+                      <ul class="footer__list">
+                          <li class="footer-item">
+                              <a href="" target="_blank"
+                                  class="footer-item__link">Rubik truyền thống
+                              </a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank"
+                                  class="footer-item__link">Rubik biến thể</a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank" class="
+                                  footer-item__link">Phụ kiện Rubik</a>
+                          </li>
+                          
+                  </div>
+                  <div class="grid__column-2-4">
+                      <h3 class="footer__heading">
+                          Theo dõi chúng tôi trên
+                      </h3>
+                      <ul class="footer__list">
+                          <li class="footer-item">
+                              <a href="" target="_blank" class="footer-item__link">
+                                  <i class="footer-item__icon footer-item__icon fa-brands fa-facebook"></i>
+                                  Facebook
+                              </a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank" class="footer-item__link">
+                                  <i class="footer-item__icon footer-item__icon fa-brands fa-instagram"></i>
+                                  Instagram
+                              </a>
+                          </li>
+                          <li class="footer-item">
+                              <a href="" target="_blank"
+                                  class="footer-item__link">
+                                  <i class="footer-item__icon footer-item__icon fa-brands fa-linkedin"></i>
+                                  LinkedIn
+                              </a>
+                          </li>
+                  </div>
+                  <div class="grid__column-2-4">
+                      <h3 class="footer__heading">
+                          Tải ứng dụng QuocBaoBui Shop ngay thôi
+                      </h3>
+                      <div class="footer__download">
+                          <img src="./img/qr_code.png" alt="Download QR" class="footer__download-qr">
+                          <div class="footer__download-apps">
+                              <a href="" class=" footer__download-app-link">
+                                  <img src="./img/appstore.png" alt="App Store"
+                                      class="footer__download-app-img">
+                              </a>
+                              <a href="" class=" footer__download-app-link">
+                                  <img src="./img/ggplay.png" alt="Google Play"
+                                      class="footer__download-app-img">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer__bottom">
+              <div class="grid">
+                  <p class="footter__text">
+                      @ 28/4/2024 - Bản quyền thuộc về QuocBaoBui Co., Ltd.
+                  </p>
+              </div>
+          </div>
+      </footer>
+    </div>
+    <!--Modal layout -->
+    <!-- <div class="modal"> -->
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+            
+                <!--Register-form-->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng kí</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với QBB shop về
+                                <a href="" class="auth-form__policy-text-link">Điều khoản dịch vụ</a> và 
+                                <a href="" class="auth-form__policy-text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__control">
+                            <button class="btn auth-form__control-back btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÍ</button>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <!--Login-form-->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng kí</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                           <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-seperate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp</a>
+                           </div>
+                        </div>
+                        <div class="auth-form__control">
+                            <button class="btn auth-form__control-back btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>
